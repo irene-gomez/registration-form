@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario registro</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <form class="form" action="/" method="post">
+        <!-- NAME -->
+        <div class="form__item item__name">
+            <div class="wrapper__name">
+                <label class="form__label" for="firstName">Nombre
+                    <input class="form__input" id="firstName" name="firstName" type="text" placeholder="Name" required>
+                </label>
+            </div>
+
+            <div class="wrapper__name">
+                <label class="form__label--hidden" for="lastName">Apellidos</label>
+                <input class="form__input" id="lastName" name="lastName" type="text" placeholder="Apellidos" required>
+            </div>
+        </div>
+
+        <!-- USER -->
+        <div class="form__item">
+            <label class="form__label" for="user">Nombre de usuario
+                <input class="form__input" id="user" name="user" type="text" placeholder="@gmail" required>
+            </label>
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="form__item">
+            <label class="form__label" for="password">Contraseña
+                <input class="form__input" id="password" name="password" type="password" required>
+            </label>
+        </div>
+
+        <div class="form__item">
+            <label class="form__label" for="confirmPassword">Confirma tu contraseña
+                <input class="form__input" id="confirmPassword" name="confirmPassword" type="password" required>
+            </label>
+        </div>
+
+        <!-- BORN DATE -->
+        <div class="form__item">
+            <fieldset class="form_fieldset">
+                <legend>Fecha de nacimiento</legend>
+                <div class="fieldset__wrapper">
+                    <div class="fieldset__item">
+                        <label class="form__label--hidden" for="dayBorn">Día</label>
+                        <input class="form__input" id="dayBorn" name="dayBorn" type="number" placeholder="Día" max="31" required>
+                    </div>
+                    
+                    <div class="fieldset__item">
+                        <label class="form__label--hidden" for="monthBorn"></label>
+                        <select id="monthBorn" name="monthBorn" required>
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="fieldset__item">
+                        <label class="form__label--hidden" for="yearBorn">Año</label>
+                        <input class="form__input" id="yearBorn" name="yearBorn" type="number" placeholder="Año" min="1900" required>
+                    </div>
+                </div>
+                    
+            </fieldset>
+        </div>
+
+        <!-- GENDER -->
+        <div class="form__item">
+            <label class="form__label" for="sex">Sexo
+                <select id="sex" name="sex" required>
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                </select>
+            </label>
+        </div>
+
+        <!-- PHONE -->
+        <div class="form__item form__item--phone">
+            <label class="form__label" for="telephone">Teléfono móvil
+                <input class="form__input" id="telephone" name="telephone" type="tel" value="+34" required>
+            </label>
+            <div class="select__country--wraper">
+                <label class="form__label--hidden" for="country">Idioma</label>
+                <select class="select__country" id="country" name="country">
+                    <option value="spain">SP</option>
+                    <option value="england">EN</option>
+                    <option value="italy">IT</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form__item">
+            <label class="form__label" for="actualEmail">Email actual
+                <input class="form__input" id="actualEmail" name="actualEmail" type="email" required>
+            </label>
+        </div>
+
+        <!-- PLACE -->
+        <div class="form__item">
+            <label class="form__label" for="place">Ubicación
+                <select id="place" name="place">
+                    <option value="spain">España</option>
+                    <option value="mongolia">Mongolia</option>
+                    <option value="germany">Alemania</option>
+                    <option value="china">China</option>
+                </select>
+            </label>
+        </div>
+
+        <!-- SUBMIT -->
+        <button class="form__submit" type="submit">Siguiente paso</button>
+
+    </form>
+    
+</body>
+</html>

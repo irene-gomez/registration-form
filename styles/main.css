@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #ddd;
+    padding: 1.5rem 0;
+}
+
+input,
+select {
+    -wekit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form,
+.form__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.form__item * {
+    display: block;
+}
+
+.form__item {
+    margin-bottom: 1.2rem;
+}
+
+.form__input, select {
+    min-width: 100%;
+    padding: .4rem;
+    margin-top: .5rem;
+}
+
+.form__item.item__name {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.wrapper__name {
+    max-width: 49%;
+}
+
+.wrapper__name .form__input {
+    width: 100%
+}
+
+.form__label, legend {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.form__label--hidden {
+    /* clip define qué porción de un elemento es visible. En este caso nada */
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0); /* IE6, IE7 */
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+}
+
+#user::placeholder {
+    text-align: right;
+}
+
+.form_fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fieldset__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fieldset__item:nth-child(1) { max-width: 16%; }
+.fieldset__item:nth-child(2) { min-width: 54%; }
+.fieldset__item:nth-child(3) { max-width: 24%; }
+
+.fieldset__item .form__input {
+    width: 100%
+}
+
+select {
+    background-color: #ddd;
+    border: 1px solid gray;
+}
+
+.form__submit {
+    padding: .4rem;
+    width: 40%;
+    align-self: flex-end;
+    background-color: #338DFF;
+    color: #fff;
+    border: 1px solid #005dd8;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.form__item--phone {
+    position: relative;
+}
+
+.form__item--phone .form__input {
+    padding-left: 3.5rem ;
+}
+
+.select__country--wraper {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 3.2rem;
+}
+
+.select__country {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    
+}
